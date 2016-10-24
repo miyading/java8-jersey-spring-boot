@@ -53,6 +53,7 @@ gradle-app.setting
 
 *.iml
 *.ipr
+*.ids
 
 # JIRA plugin
 atlassian-ide-plugin.xml
