@@ -81,8 +81,8 @@ public class A_1_NServiceFunctionalTest {
     
     assertThat(a_b.getId()).isEqualTo(aId);
     assertThat(a_b.getName()).isEqualTo("A_1_N");
-    assertThat(a_b.getB_1_Ns().get(0).getId()).isEqualTo(b_1_NsResult.get(0).getId());
-    assertThat(a_b.getB_1_Ns().get(0).getName()).isEqualTo(b_1_NsResult.get(0).getName());
+    assertThat(a_b.getB_1_NModels().get(0).getId()).isEqualTo(b_1_NsResult.get(0).getId());
+    assertThat(a_b.getB_1_NModels().get(0).getName()).isEqualTo(b_1_NsResult.get(0).getName());
   }
   
   private B_1_NModel dummyB_1_NModel(A_1_NModel a_1_NModel, String name) {

@@ -35,9 +35,7 @@ public class A_1_NService implements Loggable {
     }
     
     A_B a_b = a_1_NMapper.map(a_1_NModel, A_B.class);
-    
-    List<B_1_N> b_1_Ns = b_1_NMapper.mapList(a_1_NModel.getB_1_NModels(), B_1_N.class);
-    a_b.setB_1_Ns(b_1_Ns);
+   
     return a_b;
   }
   
@@ -50,12 +48,6 @@ public class A_1_NService implements Loggable {
     }
     
     List<A_B> a_bs = a_1_NMapper.mapList(a_1_NModels, A_B.class);
-    int i = 0;
-    for(A_1_NModel a_1_NModel : a_1_NModels) {
-      List<B_1_N> b_1_Ns = b_1_NMapper.mapList(a_1_NModel.getB_1_NModels(), B_1_N.class);
-      a_bs.get(i).setB_1_Ns(b_1_Ns);
-      i++;
-    }
     
     return a_bs;
   }
